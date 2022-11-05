@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form </title>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform!</p>
+    <form id="survey-form" method="GET" action="http://freecodecamp.org">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+
+        <!--labels and inputs -->
+
+    <div>
+   <label for="name">Name: </label>
+        <input id="name-label" type="text" placeholder="Enter your name" required>
+    <label for="email">Email: </label>
+        <input id="email-label" type="email" name="email" placeholder="Enter your email" required>
+    <label for="age">Age: </label>
+   
+    
+        <input id="number-label" type="number" name="age" min="1" max="125" placeholder="Age">
+         </div>
+
+          <br>
+    <div>
+        <label for="dropdownmenu">Choose your current situation: </label>
+        </div>
+
+      <div>
+        <select id="dropdown" name="dropdownmenu">
+            <option value="">(Select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time Job</option>
+            <option value="3">prefer not to say</option>
+            <option value="4">other</option>
+        </select>
+      </div>
+       <br>
+
+
+      <div>
+        <label for="recommend"> Would you recomment freeCodeCamp to a friend? </label>
+        <input id="Definitely" type="radio" name="recommendfreecodecamp" class="inline" /> Definitely </label>
+        <input id="Maybe" type="radio" name="recommendfreecodecamp" class="inline" /> Maybe </label>
+        <input id="notsure" type="radio" name="recommendfreecodecamp" class="inline" /> Not sure </label>
+</div>
+
+<br>
+
+
+<div>
+        <label for="preference">What did you like the most about FreeCodeCamp so far? 
+        <input  class= "checkbox" type="checkbox" value="2"> The Challenges </input>
+        <input  class= "checkbox" type="checkbox" value="3"> Community </input>
+        <input  class= "checkbox" type="checkbox" value="4"> Projects </input>
+        <input  class= "checkbox" type="checkbox" value="5"> Open Source </input>
+        </label>
+
+</div>
+
+<br>
+<div>
+            <label for="more information">Tell us what you don't like about FreeCodeCamp?</label>
+            <textarea id="more information" name="more information" rows="5" cols="30" placeholder="Provide additional Information here!"></textarea></label>
+
+</div>
+
+<div>
+      <button type="submit" value="Submit">Submit </button>
+
+      </div>
+
+
+    </form>
+</body>
+</html>
